@@ -6,11 +6,17 @@
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/jquery.effects.core.js"></script>
 <style>
+.kh01{
+position:absolute;
+top:20px; left:20px;
+width:200px; height: 100px;
+
+}
 *{
-                margin:0;
-                padding:0;}
+   margin:0;
+   padding:0;}
              
-            .title{
+   .title{
    font-family:"궁서", Arial, Dotum,Helvetica,AppleGothic,Sans-serif;
     font-size: 40px;
     font-weight: bold; 
@@ -20,12 +26,16 @@
    .title span{
     font-size: 20px}
    #menu{
+    position: absolute;
+    top:50px; letter:300px;
+    width:1000px; height:550px;
+ /*   border:1px solid red;*/
     font-family: "Trebuchet MS", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: bold;
     letter-spacing: 1.4px;
-    position: fixed;
+
     }
    #menu .item{
     position:absolute;}  
@@ -103,15 +113,16 @@
 <title>Insert title here</title>
 </head>
 <body>
+<a href="index.jsp"><img src="images/catlogo.png" title="메인페이지" class="kh01"></a>
  <div id="menu">
                 <div class="item daegu1">
                     <img src="images/bubble.png" title="" class="circle"/>
                     <a href="#" class="icon"></a>
                     <h2>register</h2>
                     <ul>
-                        <li><a href="student.jsp">student</a></li>
-                        <li><a href="professor.jsp">professor</a></li>
-                        <li><a href="manager.jsp">manager</a></li>
+                        <li><a href="student/student.jsp">student</a></li>
+                        <li><a href="professor/professor.jsp">professor</a></li>
+                        <li><a href="manager/manager.jsp">manager</a></li>
                     </ul>
                 </div>
                 <div class="item daegu2">
@@ -119,9 +130,9 @@
                     <a href="#" class="icon"></a>
                     <h2>search</h2>
                     <ul>
-                        <li><a href="student_search.jsp">student</a></li>
-                        <li><a href="professor_search.jsp">professor</a></li>
-                        <li><a href="manager_search.jsp">manager</a></li>
+                        <li><a href="student/student_searchForm.jsp">student</a></li>
+                        <li><a href="professor/professor_searchForm.jsp">professor</a></li>
+                        <li><a href="manager/manager_searchForm.jsp">manager</a></li>
                     </ul>
                 </div>
                 <div class="item daegu3">
@@ -129,9 +140,9 @@
                     <a href="#" class="icon"></a>
                     <h2>delete</h2>
                     <ul>
-                        <li><a href="student_delete.jsp">student</a></li>
-                        <li><a href="professor_delete.jsp">professor</a></li>
-                        <li><a href="manager_delete.jsp">manager</a></li>
+                        <li><a href="student/student_deleteForm.jsp">student</a></li>
+                        <li><a href="professor/professor_deleteForm.jsp">professor</a></li>
+                        <li><a href="manager/manager_deleteForm.jsp">manager</a></li>
                     </ul>
                 </div>
                 <div class="item daegu4">
@@ -139,9 +150,9 @@
                     <a href="#" class="icon"></a>
                     <h2>list</h2>
                     <ul>
-                        <li><a href="listStudent">student</a></li>
-                        <li><a href="listProfessor">professor</a></li>
-                        <li><a href="listManager">manager</a></li>
+                        <li><a href="student/studentList.jsp">student</a></li>
+                        <li><a href="professor/professorList.jsp">professor</a></li>
+                        <li><a href="manager/managerList.jsp">manager</a></li>
                         <li><a href="haksaList">haksaList</a></li>
                     </ul>
                 </div>                
@@ -150,9 +161,9 @@
                     <a href="#" class="icon"></a>
                     <h2>update</h2>
                     <ul>
-                        <li><a href="student_update.jsp">student</a></li>
-                        <li><a href="professor_update.jsp">professor</a></li>
-                        <li><a href="manager_update.jsp">manager</a></li>
+                        <li><a href="student/student_updateForm.jsp">student</a></li>
+                        <li><a href="professor/professor_updateForm.jsp">professor</a></li>
+                        <li><a href="manager/manager_updateForm.jsp">manager</a></li>
                     </ul>
                 </div>                
             </div>
